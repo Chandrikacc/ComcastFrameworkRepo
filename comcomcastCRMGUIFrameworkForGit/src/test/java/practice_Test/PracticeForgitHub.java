@@ -8,4 +8,10 @@ public class PracticeForgitHub {
 		System.out.println("hi");
 	}
 
+	
+	@Test
+	public void testingGit() {
+		System.out.println("hi");
+
+	}
 }
