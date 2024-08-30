@@ -12,6 +12,8 @@ public class PracticeForgitHub {
 	@Test
 	public void testingGit() {
 		System.out.println("hi");
+		System.out.println("hi");
+
 
 		System.out.println("bye");
 
