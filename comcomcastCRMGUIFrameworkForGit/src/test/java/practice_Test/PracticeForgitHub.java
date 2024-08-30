@@ -13,5 +13,7 @@ public class PracticeForgitHub {
 	public void testingGit() {
 		System.out.println("hi");
 
+		System.out.println("bye");
+
 	}
 }
