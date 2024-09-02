@@ -33,11 +33,12 @@ public class BaseClass {
 	public WebDriver driver=null;
 	public static WebDriver sdriver=null;
 	//public ExtentTest test;
-
+	
 
 	@BeforeSuite(groups = {"smokeTest","regressionTest"})
 	public void configBS() {
 		//connecting to DB
+		System.out.println("Hello git");
 	}
 
 	//   @Parameters("Browser")
