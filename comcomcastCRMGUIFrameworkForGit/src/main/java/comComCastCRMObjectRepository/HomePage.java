@@ -15,30 +15,25 @@ public class HomePage {
 
 	@FindBy(linkText = "Organizations")
 	private WebElement organizationsLink;
-
-	public WebElement getOrganizationsLink() {
-		return organizationsLink;
-	}
-
+	
 	@FindBy(linkText = "Contacts")
 	private WebElement contactLink;
-
-	public WebElement getContactLink() {
-		return contactLink;
-	}
-
+	
 	@FindBy(xpath = "//img[@src='themes/softed/images/user.PNG']")
 	private WebElement logoutIcon;
+	
+	@FindBy(linkText = "Sign Out" ) 
+	private WebElement signoutLink;
+	
+	@FindBy(linkText = "Dashboard")
+	private WebElement dashboardLink;
+
+	public WebElement getDashboardLink() {
+		return dashboardLink;
+	}
 
 	public WebElement getLogoutIcon() {
 		return logoutIcon;
-	}
-
-	@FindBy(linkText = "Sign Out")
-	private WebElement signoutLink;
-
-	public WebElement getSignoutLink() {
-		return signoutLink;
 	}
 
 	public void logoutFromApplication() {
