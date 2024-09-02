@@ -5,6 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+// home page pm class
 public class HomePage {
 	WebDriver driver;
 	public HomePage(WebDriver driver){
@@ -44,7 +45,4 @@ public class HomePage {
 		logoutIcon.click();
 		signoutLink.click();	
 	}
-	
-
 }
-
