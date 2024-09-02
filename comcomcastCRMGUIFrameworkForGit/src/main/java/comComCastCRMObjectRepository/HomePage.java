@@ -7,12 +7,11 @@ import org.openqa.selenium.support.PageFactory;
 
 public class HomePage {
 	WebDriver driver;
-
-	public HomePage(WebDriver driver) {
-		this.driver = driver;
-		PageFactory.initElements(driver, this);
+	public HomePage(WebDriver driver){
+		this.driver=driver;
+		PageFactory.initElements(driver,this);
 	}
-
+	
 	@FindBy(linkText = "Organizations")
 	private WebElement organizationsLink;
 	
@@ -24,22 +23,28 @@ public class HomePage {
 	
 	@FindBy(linkText = "Sign Out" ) 
 	private WebElement signoutLink;
-	
-	@FindBy(linkText = "Dashboard")
-	private WebElement dashboardLink;
 
-	public WebElement getDashboardLink() {
-		return dashboardLink;
+	public WebElement getOrganizationsLink() {
+		return organizationsLink;
+	}
+
+	public WebElement getContactLink() {
+		return contactLink;
 	}
 
 	public WebElement getLogoutIcon() {
 		return logoutIcon;
 	}
 
+	public WebElement getSinoutLink() {
+		return signoutLink;
+	}
+	
 	public void logoutFromApplication() {
 		logoutIcon.click();
-		signoutLink.click();
+		signoutLink.click();	
 	}
+	
 
-	// message
 }
+
